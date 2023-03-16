@@ -32,7 +32,6 @@ export default function User() {
     bio,
     blog,
     twitter_username,
-    login,
     html_url,
     followers,
     following,
@@ -56,12 +55,6 @@ export default function User() {
               <figure>
                 <img src={avatar_url} alt="Profile" />
               </figure>
-              {/* <div className="card-body justify-end">
-                <h2 className="title mb-2">
-                  {name}
-                  <p>{login}</p>
-                </h2>
-              </div> */}
             </div>
           </div>
 
