@@ -13,11 +13,11 @@ export const searchUsers = async text => {
     q: text,
   });
   const response = await github.get(`/search/users?${params}`);
+  console.log('response:', response);
   return response.data.items;
 };
 
 // Get a single user and user's repos
-
 export const userDataAndRepos = async login => {
   const params = new URLSearchParams({
     sort: 'created',

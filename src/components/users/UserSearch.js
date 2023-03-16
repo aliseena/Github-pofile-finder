@@ -19,7 +19,9 @@ export default function UserSearch() {
       return;
     } else {
       dispatch({ type: 'SET_LOADING' });
+      console.log('Text:', text);
       const data = await searchUsers(text);
+      console.log('data:', data);
       dispatch({ type: 'GET_USERS', payload: data });
       setText('');
     }
